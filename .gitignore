@@ -1,0 +1,10 @@
+.vscode/
+**/obj/
+*.bin
+*.eep
+*.elf
+*.lss
+*.map
+*.sym
+*.hex
+
