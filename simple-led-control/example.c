@@ -35,10 +35,10 @@ main(void)
 {
     DDRB |= _BV(LED_PIN);
 
-	clunet_init();
+    clunet_init();
 
-	for ( ; ; )
-	{
+    for ( ; ; )
+    {
         clunet_task();
-	}
+    }
 }
