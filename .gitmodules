@@ -1,0 +1,6 @@
+[submodule "DMBS"]
+	path = DMBS
+	url = https://github.com/abcminiuser/dmbs
+[submodule "libs/clunet"]
+	path = libs/clunet
+	url = https://github.com/clunet/avr-dmbs-lib

@@ -17,13 +17,13 @@ SRC          = $(TARGET).c
 CC_FLAGS     = -Iconfig
 LD_FLAGS     = 
 
-AVRDUDE_MCU	 		= m328p
-AVRDUDE_PROGRAMMER 	= usbasp
+AVRDUDE_MCU         = m328p
+AVRDUDE_PROGRAMMER  = usbasp
 # set ISP clock period at least 4us (for able to program 1MHz default MCU clock)
-AVRDUDE_BITCLK	   	= 4.0
-AVRDUDE_LFUSE 		= 0xE2
-AVRDUDE_HFUSE 		= 0xDC
-AVRDUDE_EFUSE 		= 0xFF
+AVRDUDE_BITCLK      = 4.0
+AVRDUDE_LFUSE       = 0xE2
+AVRDUDE_HFUSE       = 0xDC
+AVRDUDE_EFUSE       = 0xFF
 
 # CLUNET_BOOTLOADER_SUPPORT - bootloader support configuration
 # 0: main project without any bootloader support
@@ -39,11 +39,11 @@ CLUNET_BOOTLOADER_ADDRESS = 0x7C00
 all:
 
 # Include libraries and DMBS build script makefiles
-DMBS_PATH   ?= ../../../../fork/dmbs/DMBS
-LIB_PATH    ?= ../../libs
+DMBS_PATH   ?= ../DMBS/DMBS
+LIB_PATH    ?= ../libs
 
 # Include Clunet module
-include $(LIB_PATH)/clunet-avr-dmbs/clunet.mk
+include $(LIB_PATH)/clunet/clunet.mk
 
 include $(DMBS_PATH)/core.mk
 include $(DMBS_PATH)/gcc.mk
